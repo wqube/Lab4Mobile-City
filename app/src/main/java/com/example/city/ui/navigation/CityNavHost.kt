@@ -55,6 +55,9 @@ fun CityNavHost() {
                     navController.navigate(
                         Routes.Recommendation.createRoute(id)
                     )
+                },
+                onBackClick = {
+                    navController.popBackStack()
                 }
             )
         }
@@ -71,7 +74,12 @@ fun CityNavHost() {
             val recommendation = CityRepository.getById(id)
 
             // Если recommendation = null - экран не рисуется, иначе рисуется
-            recommendation?.let { RecommendationScreen(recommendation = it) }
+            recommendation?.let { RecommendationScreen(
+                recommendation = it,
+                onBackClick = {
+                    navController.popBackStack()
+                }
+            ) }
             }
     }
 }
