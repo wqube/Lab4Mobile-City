@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">City</string>
+
+    <!-- Список категорий -->
+    <string name="category_coffee">Кофейни</string>
+    <string name="category_food">Рестораны</string>
+    <string name="category_kids">Для детей</string>
+    <string name="category_parks">Парки</string>
+    <string name="category_shop">Торговые центры</string>
+
+    <string name="coffee_1_title">Tasty Coffee</string>
+    <string name="coffee_1_desc">Tasty Coffee description</string>
+    <string name="coffee_1_addresses">ул. Советская, 22; ул. Лихвинцева, 50; ул. Баранова, 26</string>
+
+    <string name="coffee_2_title">Coffee Moose</string>
+    <string name="coffee_2_desc">Coffee Moose description</string>
+    <string name="coffee_2_addresses">Проспект им. Конструктора Михаила Калашникова, 21, Ижевск</string>
 </resources>
