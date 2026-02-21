@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">City</string>
 
+    <string name="title_category">Категория</string>
+    <string name="title_recommendation">Рекомендация</string>
+    <string name="back">Назад</string>
+
     <!-- Список категорий -->
     <string name="category_coffee">Кофейни</string>
     <string name="category_food">Рестораны</string>

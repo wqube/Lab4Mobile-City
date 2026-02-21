@@ -2,8 +2,7 @@ package com.example.city.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -15,24 +14,21 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.city.data.CityRepository
 import com.example.city.model.Category
-import com.example.city.model.Recommendation
-import com.example.city.ui.navigation.Routes
 
 @Composable
-fun RecommendationListScreen(
+fun RecommendationsListScreen(
     category: Category,
-    onBackClick: () -> Unit,
     onRecommendationClick: (Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val recommendations = CityRepository.getByCategory(category = category)
 
-    Column(modifier = modifier) {
-        Button(onClick = onBackClick) {
-            Text("Назад")
-        }
-
-        LazyColumn(modifier = modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+        LazyColumn() {
             items(recommendations) { recommendation ->
                 Text(
                     text = stringResource(recommendation.titleResId),

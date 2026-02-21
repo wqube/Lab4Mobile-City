@@ -4,29 +4,34 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import com.example.city.ui.screens.HomeScreen
 import androidx.navigation.navArgument
 import com.example.city.data.CityRepository
 import com.example.city.model.Category
-import com.example.city.ui.screens.RecommendationListScreen
 import com.example.city.ui.screens.RecommendationScreen
+import com.example.city.ui.screens.RecommendationsListScreen
+import androidx.navigation.NavHostController
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 
 @Composable
-fun CityNavHost() {
-    // Этот контроллер хранит текущий экран, back stack, аргументы. Не пересоздается при рекомпозиции
-    // navController создается благодаря нему
-    val navController = rememberNavController()
-
+fun CityNavHost(
+    navController: NavHostController,
+    modifier: Modifier = Modifier,
+    onTitleChange: (String) -> Unit
+) {
     // Контейнер экранов
     NavHost(
         navController = navController,
-        startDestination = Routes.HomePage.route
+        startDestination = Routes.HomePage.route,
+        modifier = modifier
     ) {
         // Home
         composable(
             route = Routes.HomePage.route
         ) {
+            onTitleChange("City")
+
             HomeScreen(
                 onCategoryClick = { category ->
                     navController.navigate(
@@ -38,28 +43,31 @@ fun CityNavHost() {
 
         // Category. В аргументах передаем id всех категорий
         composable(
-            route = Routes.Category.route,
+            route = Routes.Category.route, // "category/{categoryId}"
             arguments = listOf(
                 navArgument("categoryId") { type = NavType.IntType }
             )
-            // backStackEntry - объект текущего экрана, который хранит аргументы, пришедшие из route.
-        ) { backStackEntry ->
-            val categoryId = backStackEntry.arguments?.getInt("categoryId")!!
+
+        ) { backStackEntry -> // backStackEntry - объект текущего экрана, который хранит аргументы, пришедшие из route.
+
+            val categoryId = backStackEntry.arguments?.getInt("categoryId")
 
             // Берем первое значение, где совпадет categotyId
-            val category = Category.values().first { it.id == categoryId }
+            val category = Category.values().firstOrNull { it.id == categoryId }
 
-            RecommendationListScreen(
-                category = category,
-                onRecommendationClick = { id ->
-                    navController.navigate(
-                        Routes.Recommendation.createRoute(id)
-                    )
-                },
-                onBackClick = {
-                    navController.popBackStack()
-                }
-            )
+            category?.let {
+                onTitleChange(stringResource(it.titleResId))
+
+                RecommendationsListScreen(
+                    category = it,
+                    onRecommendationClick = { id ->
+                        navController.navigate(
+                            Routes.Recommendation.createRoute(id)
+                        )
+                    },
+                    modifier = modifier
+                )
+            }
         }
 
         // Recommendation. В аргументах передаем id всех рекомендаций
@@ -69,17 +77,19 @@ fun CityNavHost() {
                 navArgument("id") {type = NavType.IntType}
             )
         ) { backStackEntry ->
-            val id = backStackEntry.arguments?.getInt("id")!!
 
-            val recommendation = CityRepository.getById(id)
+            val id = backStackEntry.arguments?.getInt("id")
+            val recommendation = id?.let { CityRepository.getById(it) }
 
             // Если recommendation = null - экран не рисуется, иначе рисуется
-            recommendation?.let { RecommendationScreen(
-                recommendation = it,
-                onBackClick = {
-                    navController.popBackStack()
-                }
-            ) }
+            recommendation?.let {
+                onTitleChange(stringResource(it.titleResId))
+
+                RecommendationScreen(
+                    recommendation = it,
+                    modifier = modifier
+                )
             }
+        }
     }
 }
