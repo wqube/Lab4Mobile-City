@@ -12,4 +12,8 @@ sealed class Routes(val route: String) {
     object Recommendation: Routes("recommendation/{id}") {
         fun createRoute(id: Int) = "recommendation/$id"
     }
+
+    object About : Routes("about")
+
+    object Settings : Routes("settings")
 }
