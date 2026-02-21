@@ -24,7 +24,7 @@ fun CityApp() {
         topBar = {
             CityTopBar(
                 title = topBarTitle,
-                navController = navController,
+                canNavigateBack = navController.previousBackStackEntry != null,
                 onBackClick = { navController.popBackStack() }
             )
         }
