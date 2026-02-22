@@ -9,6 +9,8 @@ fun NavDestination?.toAppDestination(): AppDestination? {
         Routes.About.route -> AppDestination.About
         Routes.Settings.route -> AppDestination.Settings
         Routes.Recommendation.route -> AppDestination.Recommendation
+        Routes.Explore.route -> AppDestination.Explore
+        Routes.Favorites.route -> AppDestination.Favorites
         else -> null
     }
 }

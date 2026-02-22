@@ -14,6 +14,8 @@ import androidx.navigation.NavHostController
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.example.city.ui.screens.AboutScreen
+import com.example.city.ui.screens.ExploreScreen
+import com.example.city.ui.screens.FavoritesScreen
 import com.example.city.ui.screens.SettingsScreen
 
 @Composable
@@ -46,7 +48,6 @@ fun CityNavHost(
             arguments = listOf(
                 navArgument("categoryId") { type = NavType.IntType }
             )
-
         ) { backStackEntry -> // backStackEntry - объект текущего экрана, который хранит аргументы, пришедшие из route.
 
             val categoryId = backStackEntry.arguments?.getInt("categoryId")
@@ -97,6 +98,23 @@ fun CityNavHost(
         composable(route = Routes.Settings.route) {
             onTitleChange("Настройки")
             SettingsScreen()
+        }
+
+        composable(route = Routes.Favorites.route) {
+            onTitleChange("Favorites")
+            FavoritesScreen() // экран со списком избранного
+        }
+
+        composable(Routes.Explore.route) {
+            onTitleChange("Категории")
+
+            ExploreScreen(
+                onCategoryClick = { category ->
+                    navController.navigate(
+                        Routes.Category.createRoute(category.id)
+                    )
+                }
+            )
         }
     }
 }
