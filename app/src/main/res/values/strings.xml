@@ -1,22 +1,165 @@
 <resources>
-    <string name="app_name">City</string>
+    <string name="app_name">Путеводитель</string>
 
+    <!-- Top bar titles -->
+    <string name="home">Город</string>
+    <string name="about">О приложении</string>
+    <string name="settings">Настройки</string>
+    <string name="title_favorites">Избранное</string>
+    <string name="categories">Категории</string>
+
+    <!-- Navigation-->
+    <string name="cd_open_menu">Открыть меню</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Путеводитель по городу Ижевск</string>
+    <string name="home_subtitle">
+        Добро пожаловать в приложение для рекомендаций по посещению города Ижевск.
+    </string>
+    <string name="home_description">
+        Здесь вы найдёте:
+        • кофейни и рестораны
+        • парки и места для прогулок
+        • места для отдыха с детьми
+        • интересные городские локации
+
+        Используйте нижнюю навигацию или боковое меню,
+        чтобы выбрать интересующий раздел.
+    </string>
+
+    <!-- Favorites -->
+    <string name="favorites_item_coffee">Уютная кофейня на углу</string>
+    <string name="favorites_item_park">Лучший парк для прогулок</string>
+    <string name="favorites_item_restaurant">Семейный ресторан</string>
+    <string name="favorites_item_kids">Детская площадка у озера</string>
+    <string name="favorites_added">Добавлено в избранное</string>
+
+    <!-- BottomNavItem -->
+    <string name="label_home">Домой</string>
+    <string name="label_explore">Обзор</string>
+    <string name="label_favorite">Избранное</string>
+
+    <!-- Categories -->
+    <string name="category_open_recommendations">Посмотреть рекомендации</string>
     <string name="title_category">Категория</string>
     <string name="title_recommendation">Рекомендация</string>
     <string name="back">Назад</string>
 
-    <!-- Список категорий -->
+    <!-- Categories list -->
     <string name="category_coffee">Кофейни</string>
     <string name="category_food">Рестораны</string>
     <string name="category_kids">Для детей</string>
     <string name="category_parks">Парки</string>
     <string name="category_shop">Торговые центры</string>
 
+    <!-- Coffee -->
     <string name="coffee_1_title">Tasty Coffee</string>
-    <string name="coffee_1_desc">Tasty Coffee description</string>
+    <string name="coffee_1_desc">Лучшие кофейни с уютной атмосферой и качественным кофе.</string>
     <string name="coffee_1_addresses">ул. Советская, 22; ул. Лихвинцева, 50; ул. Баранова, 26</string>
 
     <string name="coffee_2_title">Coffee Moose</string>
-    <string name="coffee_2_desc">Coffee Moose description</string>
+    <string name="coffee_2_desc">Современное место с авторскими напитками и десертами.</string>
     <string name="coffee_2_addresses">Проспект им. Конструктора Михаила Калашникова, 21, Ижевск</string>
+
+    <string name="coffee_3_title">Мамины блины</string>
+    <string name="coffee_3_desc">Кофе и свежие блины в центре города.</string>
+    <string name="coffee_3_address">ул. Горького, 84, Ижевск</string> :contentReference[oaicite:3]{index=3}
+
+    <string name="coffee_4_title">Chashka Cafe</string>
+    <string name="coffee_4_desc">Классическое кафе в литературном стиле с европейской кухней и кофейными напитками.</string>
+    <string name="coffee_4_address">ул. Лихвинцева, 46, Ижевск</string>
+
+    <string name="coffee_5_title">Brauplatz Cafe</string>
+    <string name="coffee_5_desc">Кофе и закуски в стиле европейского кафе-паба.</string>
+    <string name="coffee_5_address">ул. Бородина, 25, Ижевск</string>
+
+    <!-- Food / Restaurants -->
+    <string name="food_1_title">minbo</string>
+    <string name="food_1_desc">Ресторан японской кухни с высоким рейтингом.</string>
+    <string name="food_1_address">ул. Максима Горького, 70, Ижевск</string>
+
+    <string name="food_2_title">Б7 Lounge Bar</string>
+    <string name="food_2_desc">Современный бар-ресторан с авторской кухней.</string>
+    <string name="food_2_address">Буммашевская, 7/4, Ижевск</string>
+
+    <string name="food_3_title">Хинкальная под Парусом</string>
+    <string name="food_3_desc">Восточная кухня и хинкали в уютной обстановке.</string>
+    <string name="food_3_address">ул. Пушкинская, 279а, Ижевск</string>
+
+    <string name="food_4_title">Кама</string>
+    <string name="food_4_desc">Легендарный ресторан в Ижевске с европейской кухней и историей.</string>
+    <string name="food_4_address">ул. Максима Горького, 156, Ижевск</string>
+
+    <string name="food_5_title">Avalon Cafe</string>
+    <string name="food_5_desc">Кафе-ресторан с романтической атмосферой и ужинами.</string>
+    <string name="food_5_address">ул. Максима Горького, 92, Ижевск</string>
+
+    <!-- Kids / Family -->
+    <string name="kids_1_title">Парк динозавров «Динополис»</string>
+    <string name="kids_1_desc">Интерактивный парк с фигурами динозавров для детей.</string>
+    <string name="kids_1_address">Парк Кирова, ул. Кирова, 8а, Ижевск</string>
+
+    <string name="kids_2_title">Ижевский зоопарк</string>
+    <string name="kids_2_desc">Зоопарк с разнообразными животными и прогулочными зонами.</string>
+    <string name="kids_2_address">ул. Кирова, 8, Ижевск</string>
+
+    <string name="kids_3_title">Family Park (ТЦ Петровский)</string>
+    <string name="kids_3_desc">Игровая зона для детей в торговом центре.</string>
+    <string name="kids_3_address">ул. Михаила Петрова, 29, Ижевск</string>
+
+    <string name="kids_4_title">VR-клуб Escape</string>
+    <string name="kids_4_desc">Виртуальная реальность и развлечения для подростков.</string>
+    <string name="kids_4_address">ул. Коммунаров, 287, Ижевск</string> :contentReference[oaicite:14]{index=14}
+
+    <string name="kids_5_title">Летний сад им. М. Горького</string>
+    <string name="kids_5_desc">Зеленая зона с аттракционами и местами для пикника.</string>
+    <string name="kids_5_address">ул. Милиционная, 4, Ижевск</string> :contentReference[oaicite:15]{index=15}
+
+    <!-- Parks -->
+    <string name="parks_1_title">Парк Кирова</string>
+    <string name="parks_1_desc">Главная зелёная зона Ижевска с прудом и гуляниями.</string>
+    <string name="parks_1_address">ул. Кирова, 8а, Ижевск</string> :contentReference[oaicite:16]{index=16}
+
+    <string name="parks_2_title">Набережная им. Зодчего Дудина</string>
+    <string name="parks_2_desc">Пешеходная зона вдоль Ижевского пруда для прогулок.</string>
+    <string name="parks_2_address">наб. зодчего С.Е. Дудина, Ижевск</string> :contentReference[oaicite:17]{index=17}
+
+    <string name="parks_3_title">Центральная площадь</string>
+    <string name="parks_3_desc">Городская площадь с фонтанами и событиями.</string>
+    <string name="parks_3_address">Центральная площадь, Ижевск</string> :contentReference[oaicite:18]{index=18}
+
+    <string name="parks_4_title">Парк Космонавтов</string>
+    <string name="parks_4_desc">Парк развлечений и прогулок для всей семьи.</string>
+    <string name="parks_4_address">Парк Космонавтов, Ижевск</string> :contentReference[oaicite:19]{index=19}
+
+    <string name="parks_5_title">Берёзовая роща</string>
+    <string name="parks_5_desc">Уютная зелёная зона с лавочками и тишиной.</string>
+    <string name="parks_5_address">Берёзовая роща, Ижевск</string> :contentReference[oaicite:20]{index=20}
+
+    <!-- Shops -->
+    <string name="shop_1_title">ТРК Петровский</string>
+    <string name="shop_1_desc">Крупный торгово-развлекательный центр с магазинами и кинотеатром.</string>
+    <string name="shop_1_address">ул. Михаила Петрова, 29, Ижевск</string> :contentReference[oaicite:21]{index=21}
+
+    <string name="shop_2_title">Петровский Flagman Mall</string>
+    <string name="shop_2_desc">Шопинг-центр с широким выбором брендов и сервисов.</string>
+    <string name="shop_2_address">ул. Удмуртская, Ижевск</string> :contentReference[oaicite:22]{index=22}
+
+    <string name="shop_3_title">ТЦ Аксион</string>
+    <string name="shop_3_desc">Современный торговый центр на Карла Маркса.</string>
+    <string name="shop_3_address">ул. Карла Маркса, 191, Ижевск</string> :contentReference[oaicite:23]{index=23}
+
+    <string name="shop_4_title">ТРЦ City Mall</string>
+    <string name="shop_4_desc">Торговый центр с магазинами, развлечениями и кафе.</string>
+    <string name="shop_4_address">ул. Холмогорова, 15, Ижевск</string> :contentReference[oaicite:24]{index=24}
+
+    <string name="shop_5_title">ТЦ ЦУМ</string>
+    <string name="shop_5_desc">Центральный универмаг с одеждой и аксессуарами.</string>
+    <string name="shop_5_address">ул. Карла Маркса, 244а, Ижевск</string> :contentReference[oaicite:25]{index=25}
+
+    <!-- About screen-->
+    <string name="about_text">Приложение с рекомендациями по городу Ижевск.</string>
+
+    <!-- Settings screen-->
+    <string name="settings_text">Здесь будут настройки приложения.</string>
 </resources>

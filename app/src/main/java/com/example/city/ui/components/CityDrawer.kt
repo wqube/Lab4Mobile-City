@@ -37,16 +37,18 @@ fun CityDrawer(
 
         Spacer(Modifier.height(24.dp))
 
+        // Категории
         Text(
-            text = "Категории",
+            text = stringResource(R.string.categories),
             style = MaterialTheme.typography.titleMedium
         )
 
         Spacer(Modifier.height(8.dp))
 
+        // Список категорий
         Category.values().forEach { category ->
             Text(
-                text = category.name,
+                text = stringResource(category.titleResId),
                 modifier = Modifier
                     .fillMaxWidth()
                     .clickable { onCategoryClick(category) }
@@ -58,16 +60,18 @@ fun CityDrawer(
         Divider()
         Spacer(Modifier.height(16.dp))
 
+        // О приложении
         Text(
-            text = "О приложении",
+            text = stringResource(R.string.about),
             modifier = Modifier
                 .fillMaxWidth()
                 .clickable(onClick = onAboutClick)
                 .padding(vertical = 12.dp)
         )
 
+        // Настройки
         Text(
-            text = "Настройки",
+            text = stringResource(R.string.settings),
             modifier = Modifier
                 .fillMaxWidth()
                 .clickable(onClick = onSettingsClick)

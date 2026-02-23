@@ -11,7 +11,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.city.R
 import com.example.city.model.Category
 
 @Composable
@@ -35,7 +37,7 @@ fun CategoryCard(
             Spacer(modifier = Modifier.height(4.dp))
 
             Text(
-                text = "Посмотреть рекомендации",
+                text = stringResource(R.string.category_open_recommendations),
                 style = MaterialTheme.typography.bodyMedium
             )
         }

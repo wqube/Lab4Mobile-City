@@ -8,16 +8,18 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.city.R
 
 @Composable
 fun FavoritesScreen() {
-    // Заглушечные данные
+
     val favorites = listOf(
-        "Уютная кофейня на углу",
-        "Лучший парк для прогулок",
-        "Семейный ресторан",
-        "Детская площадка у озера"
+        R.string.coffee_1_title,
+        R.string.food_1_title,
+        R.string.parks_1_title,
+        R.string.shop_1_title
     )
 
     LazyColumn(
@@ -26,14 +28,16 @@ fun FavoritesScreen() {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        items(favorites) { item ->
-            FavoriteItem(title = item)
+        items(favorites) { titleResId ->
+            FavoriteItem(titleResId = titleResId)
         }
     }
 }
 
 @Composable
-private fun FavoriteItem(title: String) {
+private fun FavoriteItem(
+    titleResId: Int,
+) {
     Card(
         modifier = Modifier.fillMaxWidth()
     ) {
@@ -41,14 +45,14 @@ private fun FavoriteItem(title: String) {
             modifier = Modifier.padding(16.dp)
         ) {
             Text(
-                text = title,
+                text = stringResource(titleResId),
                 style = MaterialTheme.typography.titleMedium
             )
 
-            Spacer(Modifier.height(4.dp))
+            Spacer(modifier = Modifier.height(4.dp))
 
             Text(
-                text = "Добавлено в избранное",
+                text = stringResource(R.string.favorites_added),
                 style = MaterialTheme.typography.bodyMedium
             )
         }

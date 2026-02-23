@@ -13,6 +13,7 @@ import com.example.city.ui.screens.RecommendationsListScreen
 import androidx.navigation.NavHostController
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import com.example.city.R
 import com.example.city.ui.screens.AboutScreen
 import com.example.city.ui.screens.ExploreScreen
 import com.example.city.ui.screens.FavoritesScreen
@@ -32,7 +33,7 @@ fun CityNavHost(
     ) {
         // Home
         composable(route = Routes.HomePage.route) {
-            onTitleChange("City")
+            onTitleChange(stringResource(R.string.home))
             HomeScreen(
                 onCategoryClick = { category ->
                     navController.navigate(
@@ -91,22 +92,22 @@ fun CityNavHost(
         }
 
         composable(route = Routes.About.route) {
-            onTitleChange("О приложении")
+            onTitleChange(stringResource(R.string.about))
             AboutScreen()
         }
 
         composable(route = Routes.Settings.route) {
-            onTitleChange("Настройки")
+            onTitleChange(stringResource(R.string.settings))
             SettingsScreen()
         }
 
         composable(route = Routes.Favorites.route) {
-            onTitleChange("Favorites")
-            FavoritesScreen() // экран со списком избранного
+            onTitleChange(stringResource(R.string.title_favorites))
+            FavoritesScreen()
         }
 
         composable(Routes.Explore.route) {
-            onTitleChange("Категории")
+            onTitleChange(stringResource(R.string.categories))
 
             ExploreScreen(
                 onCategoryClick = { category ->

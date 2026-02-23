@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">City Guide</string>
+
+    <!-- Top bar titles -->
+    <string name="home">City</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="categories">Categories</string>
+
+    <!-- Navigation -->
+    <string name="cd_open_menu">Open menu</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Izhevsk City Guide</string>
+    <string name="home_subtitle">
+        Welcome to the app with recommendations for visiting the city of Izhevsk.
+    </string>
+    <string name="home_description">
+        Here you will find:
+        • coffee shops and restaurants
+        • parks and walking areas
+        • places for family and kids
+        • interesting city locations
+
+        Use the bottom navigation bar or the side menu
+        to choose a section you are interested in.
+    </string>
+
+    <!-- Favorites -->
+    <string name="favorites_item_coffee">Cozy corner coffee shop</string>
+    <string name="favorites_item_park">Best park for walking</string>
+    <string name="favorites_item_restaurant">Family-friendly restaurant</string>
+    <string name="favorites_item_kids">Playground near the lake</string>
+    <string name="favorites_added">Added to favorites</string>
+
+    <!-- BottomNavItem -->
+    <string name="label_home">Home</string>
+    <string name="label_explore">Explore</string>
+    <string name="label_favorite">Favorites</string>
+
+    <!-- Categories -->
+    <string name="category_open_recommendations">View recommendations</string>
+    <string name="title_category">Category</string>
+    <string name="title_recommendation">Recommendation</string>
+    <string name="back">Back</string>
+
+    <!-- Categories list -->
+    <string name="category_coffee">Coffee Shops</string>
+    <string name="category_food">Restaurants</string>
+    <string name="category_kids">For Kids</string>
+    <string name="category_parks">Parks</string>
+    <string name="category_shop">Shopping Centers</string>
+
+    <!-- Coffee -->
+    <string name="coffee_1_title">Tasty Coffee</string>
+    <string name="coffee_1_desc">One of the best coffee shops with a cozy atmosphere and high-quality coffee.</string>
+    <string name="coffee_1_addresses">Sovetskaya St, 22; Likhvintseva St, 50; Baranova St, 26</string>
+
+    <string name="coffee_2_title">Coffee Moose</string>
+    <string name="coffee_2_desc">A modern coffee place with signature drinks and desserts.</string>
+    <string name="coffee_2_addresses">Mikhail Kalashnikov Ave, 21, Izhevsk</string>
+
+    <string name="coffee_3_title">Mom’s Pancakes</string>
+    <string name="coffee_3_desc">Coffee and freshly made pancakes in the city center.</string>
+    <string name="coffee_3_address">Gorky St, 84, Izhevsk</string>
+
+    <string name="coffee_4_title">Chashka Cafe</string>
+    <string name="coffee_4_desc">A classic literary-style café with European cuisine and coffee drinks.</string>
+    <string name="coffee_4_address">Likhvintseva St, 46, Izhevsk</string>
+
+    <string name="coffee_5_title">Brauplatz Cafe</string>
+    <string name="coffee_5_desc">Coffee and snacks in a European pub-style café.</string>
+    <string name="coffee_5_address">Borodina St, 25, Izhevsk</string>
+
+    <!-- Food / Restaurants -->
+    <string name="food_1_title">Minbo</string>
+    <string name="food_1_desc">Highly rated Japanese cuisine restaurant.</string>
+    <string name="food_1_address">Maxim Gorky St, 70, Izhevsk</string>
+
+    <string name="food_2_title">B7 Lounge Bar</string>
+    <string name="food_2_desc">Modern lounge bar with signature dishes and drinks.</string>
+    <string name="food_2_address">Bummashevskaya St, 7/4, Izhevsk</string>
+
+    <string name="food_3_title">Khinkali Under the Sail</string>
+    <string name="food_3_desc">Eastern cuisine and khinkali served in a cozy atmosphere.</string>
+    <string name="food_3_address">Pushkinskaya St, 279a, Izhevsk</string>
+
+    <string name="food_4_title">Kama</string>
+    <string name="food_4_desc">A legendary Izhevsk restaurant with European cuisine and history.</string>
+    <string name="food_4_address">Maxim Gorky St, 156, Izhevsk</string>
+
+    <string name="food_5_title">Avalon Cafe</string>
+    <string name="food_5_desc">A romantic café-restaurant, perfect for dinner dates.</string>
+    <string name="food_5_address">Maxim Gorky St, 92, Izhevsk</string>
+
+    <!-- Kids / Family -->
+    <string name="kids_1_title">Dinopolis Dinosaur Park</string>
+    <string name="kids_1_desc">An interactive dinosaur park for children.</string>
+    <string name="kids_1_address">Kirov Park, Kirova St, 8a, Izhevsk</string>
+
+    <string name="kids_2_title">Izhevsk Zoo</string>
+    <string name="kids_2_desc">A zoo with a wide variety of animals and walking areas.</string>
+    <string name="kids_2_address">Kirova St, 8, Izhevsk</string>
+
+    <string name="kids_3_title">Family Park (Petrovsky Mall)</string>
+    <string name="kids_3_desc">Children’s entertainment zone inside a shopping mall.</string>
+    <string name="kids_3_address">Mikhail Petrova St, 29, Izhevsk</string>
+
+    <string name="kids_4_title">Escape VR Club</string>
+    <string name="kids_4_desc">Virtual reality games and entertainment for teenagers.</string>
+    <string name="kids_4_address">Kommunarov St, 287, Izhevsk</string>
+
+    <string name="kids_5_title">Gorky Summer Garden</string>
+    <string name="kids_5_desc">A green park with attractions and picnic areas.</string>
+    <string name="kids_5_address">Militsionnaya St, 4, Izhevsk</string>
+
+    <!-- Parks -->
+    <string name="parks_1_title">Kirov Park</string>
+    <string name="parks_1_desc">The main green area of Izhevsk with a pond and walking paths.</string>
+    <string name="parks_1_address">Kirova St, 8a, Izhevsk</string>
+
+    <string name="parks_2_title">Dudin Embankment</string>
+    <string name="parks_2_desc">A pedestrian embankment along the Izhevsk pond.</string>
+    <string name="parks_2_address">Architect S.E. Dudin Embankment, Izhevsk</string>
+
+    <string name="parks_3_title">Central Square</string>
+    <string name="parks_3_desc">City square with fountains and public events.</string>
+    <string name="parks_3_address">Central Square, Izhevsk</string>
+
+    <string name="parks_4_title">Cosmonauts Park</string>
+    <string name="parks_4_desc">An amusement and walking park for the whole family.</string>
+    <string name="parks_4_address">Cosmonauts Park, Izhevsk</string>
+
+    <string name="parks_5_title">Birch Grove</string>
+    <string name="parks_5_desc">A quiet green area with benches and shade.</string>
+    <string name="parks_5_address">Birch Grove, Izhevsk</string>
+
+    <!-- Shops -->
+    <string name="shop_1_title">Petrovsky Mall</string>
+    <string name="shop_1_desc">A large shopping and entertainment center with stores and a cinema.</string>
+    <string name="shop_1_address">Mikhail Petrova St, 29, Izhevsk</string>
+
+    <string name="shop_2_title">Petrovsky Flagman Mall</string>
+    <string name="shop_2_desc">A shopping mall with a wide range of brands and services.</string>
+    <string name="shop_2_address">Udmurtskaya St, Izhevsk</string>
+
+    <string name="shop_3_title">Aksion Mall</string>
+    <string name="shop_3_desc">A modern shopping center on Karl Marx Street.</string>
+    <string name="shop_3_address">Karl Marx St, 191, Izhevsk</string>
+
+    <string name="shop_4_title">City Mall</string>
+    <string name="shop_4_desc">A mall with shops, entertainment, and cafés.</string>
+    <string name="shop_4_address">Kholmogorova St, 15, Izhevsk</string>
+
+    <string name="shop_5_title">Central Department Store (TSUM)</string>
+    <string name="shop_5_desc">The central department store with clothing and accessories.</string>
+    <string name="shop_5_address">Karl Marx St, 244a, Izhevsk</string>
+
+    <!-- About screen -->
+    <string name="about_text">An application with recommendations for visiting the city of Izhevsk.</string>
+
+    <!-- Settings screen -->
+    <string name="settings_text">Application settings will be available here.</string>
+</resources>

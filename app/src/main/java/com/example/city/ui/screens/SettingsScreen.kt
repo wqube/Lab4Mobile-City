@@ -4,7 +4,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.city.R
 
 @Composable
 fun SettingsScreen(
@@ -15,8 +17,8 @@ fun SettingsScreen(
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = "Настройки")
+        Text(stringResource(R.string.settings))
         Spacer(modifier = Modifier.height(8.dp))
-        Text(text = "Здесь будут настройки приложения.")
+        Text(stringResource(R.string.settings_text))
     }
 }

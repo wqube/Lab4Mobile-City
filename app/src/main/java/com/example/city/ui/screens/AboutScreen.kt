@@ -4,7 +4,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.city.R
 
 @Composable
 fun AboutScreen(
@@ -15,8 +17,8 @@ fun AboutScreen(
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = "О приложении")
+        Text(stringResource(R.string.about))
         Spacer(modifier = Modifier.height(8.dp))
-        Text(text = "City — приложение с рекомендациями по городу.")
+        Text(stringResource(R.string.about_text))
     }
 }

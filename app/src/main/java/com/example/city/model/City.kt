@@ -6,6 +6,7 @@ data class Recommendation (
     val id: Int,
     val titleResId: Int,
     val descriptionResId: Int,
+    val addressResId: Int,
     val imageResId: Int,
     var category: Category
 )
